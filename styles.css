@@ -1,4 +1,4 @@
-/* Custom Styles */
+/* General Styles */
 body {
   font-family: 'Coiny', cursive;
   margin: 0;
@@ -30,9 +30,28 @@ header .carousel-inner .item img {
   color: white;
 }
 
-.carousel-control.right,
-.carousel-control.left {
+.carousel-control.right, .carousel-control.left {
   background-image: none;
+}
+
+/* Custom Navigation Control Styling */
+.carousel-control.custom-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.carousel-control.custom-control i {
+  font-size: 30px;
+  color: white;
+}
+
+.carousel-control.custom-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Recipe Section */
