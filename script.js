@@ -29,23 +29,7 @@ function currentSlide(index) {
 // Initialize slider
 showSlide(currentSlideIndex);
 
-// Optional: Auto-slide every 5 seconds
+// Auto-slide every 5 seconds
 setInterval(() => {
     moveSlide(1);
 }, 5000);
-
-// Smooth scroll to recipe section when Explore Recipes is clicked
-document.querySelector('.explore-btn').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.querySelector('#recipes').scrollIntoView({
-        behavior: 'smooth'
-    });
-});
-
-// Handle View Recipe button clicks
-const recipeButtons = document.querySelectorAll('.view-recipe-btn');
-recipeButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        alert('This feature is coming soon!');
-    });
-});
