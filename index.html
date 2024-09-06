@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Link the external CSS -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -14,6 +14,7 @@
 <!-- Hero Section with Bootstrap Carousel -->
 <div class="hero-section">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -26,27 +27,33 @@
       <div class="item active">
         <img src="a.jpg" alt="Recipe 1">
         <div class="carousel-caption">
-          <h1>Welcome to Our Family Recipes</h1>
-          <p>Delicious recipes passed down through generations</p>
-          <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          <div class="caption-box">
+            <h1>Welcome to Our Family Recipes</h1>
+            <p>Delicious recipes passed down through generations</p>
+            <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          </div>
         </div>
       </div>
 
       <div class="item">
         <img src="b.jpg" alt="Recipe 2">
         <div class="carousel-caption">
-          <h1>Delicious Desserts</h1>
-          <p>Enjoy mouth-watering sweets and desserts</p>
-          <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          <div class="caption-box">
+            <h1>Delicious Desserts</h1>
+            <p>Enjoy mouth-watering sweets and desserts</p>
+            <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          </div>
         </div>
       </div>
 
       <div class="item">
         <img src="c.jpg" alt="Recipe 3">
         <div class="carousel-caption">
-          <h1>Healthy Meals</h1>
-          <p>Wholesome meals for a healthy lifestyle</p>
-          <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          <div class="caption-box">
+            <h1>Healthy Meals</h1>
+            <p>Wholesome meals for a healthy lifestyle</p>
+            <a href="#recipes" class="explore-btn">Explore Recipes</a>
+          </div>
         </div>
       </div>
     </div>
