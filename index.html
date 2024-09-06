@@ -16,6 +16,28 @@
         </div>
     </header>
 
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="recipe1.jpg" alt="Recipe 1">
+            </div>
+            <div class="slide">
+                <img src="recipe2.jpg" alt="Recipe 2">
+            </div>
+            <div class="slide">
+                <img src="recipe3.jpg" alt="Recipe 3">
+            </div>
+        </div>
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
     <!-- Recipe Section -->
     <section id="recipes" class="recipe-list">
         <article class="recipe-card">
@@ -30,7 +52,6 @@
             <p>A delightful mix of rich, creamy sauces and herbs. An ideal main course.</p>
             <button class="view-recipe-btn">View Recipe</button>
         </article>
-        <!-- Add more recipe cards as needed -->
     </section>
 
     <script src="script.js" defer></script>
