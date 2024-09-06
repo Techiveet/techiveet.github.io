@@ -1,4 +1,10 @@
-/* Custom Styles for the Recipe Page */
+/* Custom Styles */
+body {
+  font-family: 'Coiny', cursive;
+  margin: 0;
+  padding-top: 50px; /* Account for fixed navbar */
+}
+
 header .carousel-inner .item {
   height: 100vh;
 }
@@ -16,31 +22,30 @@ header .carousel-inner .item img {
 .carousel-caption h2 {
   font-size: 50px;
   text-transform: uppercase;
+  color: white;
 }
 
 .carousel-caption h3 {
   font-size: 24px;
+  color: white;
 }
 
-.carousel-control.right, .carousel-control.left {
+.carousel-control.right,
+.carousel-control.left {
   background-image: none;
 }
 
 /* Recipe Section */
 .recipe-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 50px;
-  background-color: #fff;
+  margin-top: 50px;
 }
 
 .recipe-card {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -51,10 +56,8 @@ header .carousel-inner .item img {
 }
 
 .recipe-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .recipe-card h3 {
@@ -63,20 +66,14 @@ header .carousel-inner .item img {
 }
 
 .recipe-card p {
-  padding: 0 20px 20px;
-  font-size: 1rem;
   color: #777;
 }
 
 .view-recipe-btn {
   background-color: #8bc34a;
   color: white;
-  padding: 10px 20px;
-  border: none;
   border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 20px;
+  padding: 10px 20px;
 }
 
 .view-recipe-btn:hover {

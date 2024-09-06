@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Family Recipes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- External CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
+<!-- Navbar -->
 <header>
-  <!-- Navbar Section -->
   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
-      <!-- Brand and toggle for mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -25,26 +28,19 @@
         </button>
         <a class="navbar-brand" href="#">Family Recipes</a>
       </div>
-
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="#recipes">Recipes</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </li>
+          <li><a href="#">About</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Sign In</a></li>
           <li><a href="#">Sign Up</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
 
   <!-- Carousel Section -->
@@ -56,27 +52,29 @@
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
 
-    <!-- Carousel Slides -->
+    <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://i.postimg.cc/wTBDN2JW/1.jpg" alt="First Slide">
+        <img src="https://i.postimg.cc/wTBDN2JW/1.jpg" alt="We Are Reliable">
         <div class="carousel-caption">
           <h2 class="animated bounceInRight" style="animation-delay: 1s">We Are Reliable</h2>
-          <h3 class="animated bounceInLeft" style="animation-delay: 2s">Lorem ipsum dolor sit amet.</h3>
+          <h3 class="animated bounceInLeft" style="animation-delay: 2s">Your trusted recipe source.</h3>
         </div>
       </div>
+
       <div class="item">
-        <img src="https://i.postimg.cc/GhHwf0Gv/2.jpg" alt="Second Slide">
+        <img src="https://i.postimg.cc/GhHwf0Gv/2.jpg" alt="We Deliver On Time">
         <div class="carousel-caption">
           <h2 class="animated slideInDown" style="animation-delay: 1s">We Deliver On Time</h2>
-          <h3 class="animated slideInRight" style="animation-delay: 2s">Lorem ipsum dolor sit amet.</h3>
+          <h3 class="animated slideInRight" style="animation-delay: 2s">Always fresh, always delicious.</h3>
         </div>
       </div>
+
       <div class="item">
-        <img src="https://i.postimg.cc/ncsgk4fk/3.jpg" alt="Third Slide">
+        <img src="https://i.postimg.cc/ncsgk4fk/3.jpg" alt="Best Customer Support">
         <div class="carousel-caption">
           <h2 class="animated zoomIn" style="animation-delay: 1s">Best Customer Support</h2>
-          <h3 class="animated zoomIn" style="animation-delay: 2s">Lorem ipsum dolor sit amet.</h3>
+          <h3 class="animated zoomIn" style="animation-delay: 2s">We're here for you.</h3>
         </div>
       </div>
     </div>
@@ -94,21 +92,36 @@
 </header>
 
 <!-- Recipe Section -->
-<section id="recipes" class="recipe-list">
-  <article class="recipe-card">
-    <img src="cheese.jpg" alt="Cheese Balls">
-    <h3>Cheese Balls</h3>
-    <p>Crunchy on the outside, cheesy on the inside. A perfect appetizer!</p>
-    <button class="view-recipe-btn">View Recipe</button>
-  </article>
-  <article class="recipe-card">
-    <img src="pasta.jpg" alt="Creamy Pasta">
-    <h3>Creamy Pasta</h3>
-    <p>A delightful mix of rich, creamy sauces and herbs. An ideal main course.</p>
-    <button class="view-recipe-btn">View Recipe</button>
-  </article>
+<section id="recipes" class="recipe-list container">
+  <div class="row">
+    <div class="col-sm-4">
+      <article class="recipe-card">
+        <img src="cheese.jpg" alt="Cheese Balls" class="img-responsive">
+        <h3>Cheese Balls</h3>
+        <p>Crunchy on the outside, cheesy on the inside. A perfect appetizer!</p>
+        <button class="view-recipe-btn btn btn-success">View Recipe</button>
+      </article>
+    </div>
+
+    <div class="col-sm-4">
+      <article class="recipe-card">
+        <img src="pasta.jpg" alt="Creamy Pasta" class="img-responsive">
+        <h3>Creamy Pasta</h3>
+        <p>A delightful mix of rich, creamy sauces and herbs. An ideal main course.</p>
+        <button class="view-recipe-btn btn btn-success">View Recipe</button>
+      </article>
+    </div>
+
+    <div class="col-sm-4">
+      <article class="recipe-card">
+        <img src="salad.jpg" alt="Healthy Salad" class="img-responsive">
+        <h3>Healthy Salad</h3>
+        <p>Fresh ingredients for a wholesome meal. Stay healthy!</p>
+        <button class="view-recipe-btn btn btn-success">View Recipe</button>
+      </article>
+    </div>
+  </div>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
