@@ -1,51 +1,29 @@
 /* Custom Styles for the Recipe Page */
-
-/* Hero Section */
-.hero-section {
+header .carousel-inner .item {
   height: 100vh;
-  position: relative;
-  overflow: hidden; /* Prevent overflow when scaling carousel */
 }
 
-.carousel-inner img {
+header .carousel-inner .item img {
   width: 100%;
   height: 100vh;
-  object-fit: cover; /* Makes the image cover the entire container */
+  object-fit: cover;
 }
 
 .carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  width: 100%;
-  color: white;
+  padding-bottom: 150px;
+}
+
+.carousel-caption h2 {
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 .carousel-caption h3 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding text-shadow for better readability */
+  font-size: 24px;
 }
 
-.carousel-caption p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text-shadow for description */
-}
-
-/* Optional Button Styling for Explore */
-.explore-btn {
-  background-color: #ff6347;
-  padding: 10px 25px;
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-}
-
-.explore-btn:hover {
-  background-color: #e55337;
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
 }
 
 /* Recipe Section */
