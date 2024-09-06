@@ -1,113 +1,119 @@
 /* Global Styles */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    background-image: url('background-image.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-section .overlay {
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  background-color: #ff6347;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #e55337;
+}
+
+/* Recipe List Section */
+.recipe-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.recipe-card h3 {
+  margin: 15px 0;
+  font-size: 1.6rem;
+}
+
+.recipe-card p {
+  padding: 0 20px 20px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.view-recipe-btn {
+  background-color: #8bc34a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.view-recipe-btn:hover {
+  background-color: #7caf3d;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+      font-size: 2.5rem;
   }
-  
-  .hero-section button {
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero-section button:hover {
-    background-color: #e55337;
-  }
-  
-  /* Recipe List */
+
   .recipe-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px;
-  }
-  
-  .recipe-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .recipe-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .recipe-card img {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .recipe-card h3 {
-    padding: 15px 0;
-    font-size: 1.5em;
-  }
-  
-  .recipe-card p {
-    padding: 0 20px 20px;
-    font-size: 1em;
-    color: #666;
-  }
-  
-  .recipe-card button {
-    background-color: #8bc34a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .recipe-card button:hover {
-    background-color: #7caf3d;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 2.5em;
-    }
-  
-    .recipe-list {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .recipe-card {
-      width: 90%;
-    }
   }
-  
+
+  .recipe-card {
+      width: 90%;
+  }
+}

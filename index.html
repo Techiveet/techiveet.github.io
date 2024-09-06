@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Recipes</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Recipes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="hero-section">
-    <h1>Welcome to Our Family Recipes</h1>
-    <button class="explore-btn">Explore Recipes</button>
-  </div>
-  <script src="script.js" defer></script>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="overlay">
+            <h1>Welcome to Our Family Recipes</h1>
+            <p>Delicious recipes passed down through generations</p>
+            <a href="#recipes" class="explore-btn">Explore Recipes</a>
+        </div>
+    </header>
+
+    <!-- Recipe Section -->
+    <section id="recipes" class="recipe-list">
+        <article class="recipe-card">
+            <img src="cheese-balls.jpg" alt="Cheese Balls">
+            <h3>Cheese Balls</h3>
+            <p>Crunchy on the outside, cheesy on the inside. A perfect appetizer!</p>
+            <button class="view-recipe-btn">View Recipe</button>
+        </article>
+        <article class="recipe-card">
+            <img src="pasta.jpg" alt="Creamy Pasta">
+            <h3>Creamy Pasta</h3>
+            <p>A delightful mix of rich, creamy sauces and herbs. An ideal main course.</p>
+            <button class="view-recipe-btn">View Recipe</button>
+        </article>
+        <!-- Add more recipe cards as needed -->
+    </section>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
